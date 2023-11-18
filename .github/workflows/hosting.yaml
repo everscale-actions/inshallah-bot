@@ -1,18 +1,18 @@
 name: Hosting
 
 on:
-  push:
-    paths:
-      - .github/workflows/hosting.yaml
-      - .hosting/**
-    branches:
-      - main
-  schedule:
-    # - cron: '0 */4 * * *'
-  workflow_run:
-    workflows: [ CI ]
-    types: [ completed ]
-    branches: [ main ]
+  # push:
+  #   paths:
+  #     - .github/workflows/hosting.yaml
+  #     - .hosting/**
+  #   branches:
+  #     - main
+  # schedule:
+  #   - cron: '0 */4 * * *'
+  # workflow_run:
+  #   workflows: [ CI ]
+  #   types: [ completed ]
+  #   branches: [ main ]
   workflow_dispatch:
 
 env:
